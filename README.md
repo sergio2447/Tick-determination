@@ -1,2 +1,4 @@
-# Tick-determination
-A snakemake tool for tick determination from whole genome sequencing samples.
+# Tick determination
+A snakemake pipeline for tick determination from ONT whole genome sequencing samples (after basecalling).
+
+## What does this pipeline do?
