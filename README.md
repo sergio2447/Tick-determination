@@ -5,6 +5,8 @@ A snakemake pipeline for tick determination from ONT whole genome sequencing sam
 
 ## 🐍 Workflow
 
+![Workflow](https://github.com/sergio2447/Tick-determination/blob/main/Blank%20diagram.png)
+
 ## instalations
 
 ### downloading the pipeline
