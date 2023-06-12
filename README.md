@@ -25,5 +25,6 @@ When its done updating download the following chanels:
 
 `conda config --add channels conda-forge`
 
-## creating a snake make environment
-for creating 
+### creating a snake make environment
+For creating the snakemake environment you should use this in the terminal: `conda create -n snakemake -c bioconda snakemake python=3.10 `.  After this environment is created use `conda activate snakemake` to activate the environment.
+
