@@ -18,11 +18,12 @@ At the end of the instalation there will be a request to download conda init. Pl
 ### updating and instaling conda changels
 After closing and reopening the terminal you should be able tu update conda: `conda update --yes conda`.
 When its done updating download the following chanels:
-`$ conda config --add channels defaults
 
-$ conda config --add channels bioconda 
+`conda config --add channels defaults`
 
-$ conda config --add channels conda-forge`
+`conda config --add channels bioconda`
+
+`conda config --add channels conda-forge`
 
 ## creating a snake make environment
 for creating 
