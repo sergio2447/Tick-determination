@@ -28,3 +28,12 @@ When its done updating download the following chanels:
 ### creating a snake make environment
 For creating the snakemake environment you should use this in the terminal: `conda create -n snakemake -c bioconda snakemake python=3.10 `.  After this environment is created use `conda activate snakemake` to activate the environment.
 
+## configurating the pipeline to your needs.
+For the configuration of the pipeline there are several parts which can be tweaked for your own needs.
+First we have the directory input_data where you can store your data which needs to be analyzed. The data should be processed after base calling and should be formatted in `fastq.gz`.
+
+### sample names
+The sample names should be in the **sample_names.yml** file. In this file there are brackets after the IDs: where you should write down your sample names without the fastq.gz part. separate the samples with a comma between the brackets to create your sample list. These names will be used to make sure every sample goes through the pipeline and the results get named to the sample name you provided.
+
+### Trimming settings
+If you want to tweak the Trimming settings from the chopper tool open the Snakefile with nano `nano Snakefile`. Go to the rule filtering_data: In this rule the shell 
