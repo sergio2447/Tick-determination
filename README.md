@@ -10,12 +10,25 @@ A snakemake pipeline for tick determination from ONT whole genome sequencing sam
 ## instalations
 
 ### downloading the pipeline
-Use `wget https://github.com/sergio2447/Tick-determination/archive/refs/heads/main.zip > Tick_determination.zip`  to download this repository from github and unzip the file with `unzip Tick_determination.zip`
+for downloading the pipeline use:
+```bash
+wget https://github.com/sergio2447/Tick-determination/archive/refs/heads/main.zip > Tick_determination.zip
+```
+to download this repository from github and unzip the file with:  
+```bash
+unzip Tick_determination.zip
+```
 
 ### Installing miniconda
-Download miniconda3: `curl -O https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh`.
+Download miniconda3:
+```bash
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
+```
 
-After the file is downloaded use `bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh` to install miniconda3. Keep in mind that python 3.10 is required to install miniconda3.
+After the file is downloaded use:
+```bash
+bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
+``` to install miniconda3. Keep in mind that python 3.10 is required to install this version of miniconda3.
 
 At the end of the instalation there will be a request to download conda init. Please type **"yes"** here. This will add some code to your .bashrc file, which is important to work with correctly.
 
@@ -32,7 +45,10 @@ conda config --add channels conda-forge
 ```
 
 ### creating a snake make environment
-For creating the snakemake environment you should use this in the terminal: `conda create -n snakemake -c bioconda snakemake python=3.10 `.  After this environment is created use `conda activate snakemake` to activate the environment.
+For creating the snakemake environment you should use this in the terminal: 
+```bash
+conda create -n snakemake -c bioconda snakemake python=3.10
+``` After this environment is created use `conda activate snakemake` to activate the environment.
 
 ## configurating the pipeline to your needs.
 For the configuration of the pipeline there are several parts which can be tweaked for your own needs.
