@@ -34,7 +34,7 @@ all these directorys can be found in the output_data directory.
 6. consensus_and_kraken_data: The consensus sequence in fasta format and kraken output can be found in this directory.
 7. results: From the samtools flagstats are 2 txt files per sample stored from before and after extracting reads to view how manny reads are mapped. Also the results from the kraken allignment against the reference sequences database are shown here in a txt file containing the classification of the species.
 
-## instalations
+## ⚙️ Installation
 
 ### downloading the pipeline
 for downloading the pipeline use:
