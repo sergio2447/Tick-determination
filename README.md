@@ -1,4 +1,4 @@
-# Tick determination
+# Determination of tick species on wild birds in the Netherlands
 A Snakemake pipeline for tick determination from ONT metagenomic sequencing samples (after base calling).
 
 ## Introduction
