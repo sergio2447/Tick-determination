@@ -115,3 +115,19 @@ To start the workflow use the command:
 snakemake -c8 --use-conda
 ```
 The value of -c can be adjusted to a different number of threads that the user might prefer. 
+
+### Useful snakemake parameters
+
+| Short Option | Long Option | Explanation |
+| :------ | :------ | :---------- |
+| `-k` | `--keep` | If a job fails, continue with independent jobs. |
+| `-p` | `--printshellcmds` | Print out the shell commands that will be executed. |
+| `-r` | `--reason` | Print the reason for rule execution (Missing output, updated input etc.) |
+| `-c` | `--cores` | Number of CPU cores (threads) to use for this run. With no int, it uses all. |
+| `--ri` | `--rerun-incomplete` | If Snakemake marked a file as incomplete after a crash, delete and produce it again. |
+| `-n` | `--dryrun` | Just pretend to run the workflow. A similar option is `-S` (`--summary`). |
+| `-q` | `--quiet` | Do not output certain information. If used without arguments, do not output any progress or rule information. |
+|      | `--cleanup-shadow` | Cleanup old shadow directories which have not been deleted due to failures or power loss. |
+|      | `--verbose` | Print detailed stack traces and detailed operations. Default is False. |
+|      | `--nocolor` | Do not use a colored output. Default is False. |
+
