@@ -10,7 +10,7 @@ In the Snakemake workflow, using a set of tools will lead to species identificat
 3. The filtered reads are also checked on quality using Nanoplot.
 4. With Minimap2, the filtered ONT reads are mapped against the reference sequences using the map-ont mode.
 5. Samtools is used to manipulate the .sam output of Minimap2. Samtools does the converting to a bam file, indexing, sorting, and extracting of the mapped reads. It also provides flagstats so the user can see how many reads are mapped and extracted.
-6. BCFtools is used to make a consensus from the mapped reads, which can be analyzed using Kraken. The consensus sequence is transformed from a fastq file to a fasa file using the python script [fastq_to_fasta.py]() in the scripts directory
+6. BCFtools is used to make a consensus from the mapped reads, which can be analyzed using Kraken. The consensus sequence is transformed from a fastq file to a fasa file using the python script [fastq_to_fasta.py](https://github.com/sergio2447/Tick-determination/blob/main/scripts/fastq_to_fasta.py) in the scripts directory
 7. Lastly, Kraken is used to build a database with COI reference sequences of choice. The consensus sequence is aligned against the database, and Kraken assigns taxonomic labels to the consensus sequences.  
 
 
